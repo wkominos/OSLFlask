@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+    <h1>Hello, {{ current_user.username }}</h1>
+    {% for post in posts %}
+        {% include '_post.html' %}
+    {% endfor %}
+    <h4>Upload the output report from Workflows here. <br> The validation file will download to your computer.</h4>
+    <form action="{{ url_for('main.validation_file') }}" method="post" enctype="multipart/form-data">
+        {{ form.hidden_tag() }}
+        {{ form.attachment }}
+        {{ form.submit() }}
+    </form>
+    <h4>Upload the validation file here and send it to the ILL server</h4>
+    <form action="{{ url_for('main.import_file') }}" method="post" enctype="multipart/form-data">
+        {{ import_form.hidden_tag() }}
+        {{ import_form.attachment }}
+        {{ import_form.submit() }}
+    </form>
+{% endblock %}

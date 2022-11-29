@@ -1,0 +1,98 @@
+2022-10-25 14:26:27,407 INFO: Microblog startup [in /mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/app/__init__.py:63]
+2022-10-25 14:27:09,857 INFO: Microblog startup [in /mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/app/__init__.py:63]
+2022-10-25 14:27:43,604 INFO: Microblog startup [in /mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/app/__init__.py:63]
+2022-10-25 14:32:01,999 INFO: Microblog startup [in /mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/app/__init__.py:63]
+2022-10-27 13:58:51,735 INFO: Microblog startup [in /mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/app/__init__.py:63]
+2022-10-27 14:37:36,140 INFO: Microblog startup [in /mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/app/__init__.py:63]
+2022-10-27 14:37:56,992 INFO: Microblog startup [in /mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/app/__init__.py:63]
+2022-10-27 14:38:56,564 INFO: Microblog startup [in /mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/app/__init__.py:63]
+2022-11-07 11:35:57,322 INFO: Microblog startup [in /mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/app/__init__.py:63]
+2022-11-28 14:29:54,242 INFO: Microblog startup [in /mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/app/__init__.py:63]
+2022-11-28 14:30:05,465 ERROR: Exception on /favicon.ico [GET] [in /mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/venv/lib/python3.7/site-packages/flask/app.py:1742]
+Traceback (most recent call last):
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/venv/lib/python3.7/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/venv/lib/python3.7/site-packages/flask/app.py", line 1785, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/venv/lib/python3.7/site-packages/flask/app.py", line 1767, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/venv/lib/python3.7/site-packages/flask/ctx.py", line 351, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/venv/lib/python3.7/site-packages/werkzeug/routing/map.py", line 624, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/venv/lib/python3.7/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/venv/lib/python3.7/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/venv/lib/python3.7/site-packages/flask/app.py", line 1666, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/venv/lib/python3.7/site-packages/flask/app.py", line 1606, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/app/errors/handlers.py", line 8, in not_found_error
+    return render_template('errors/404.html'), 404
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/venv/lib/python3.7/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/venv/lib/python3.7/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/venv/lib/python3.7/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/venv/lib/python3.7/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/app/templates/errors/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/app/templates/base.html", line 33, in top-level template code
+    {% block app_content %}{% endblock %}
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/app/templates/errors/404.html", line 4, in block 'app_content'
+    <h1>{{ _('Not Found') }}</h1>
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/venv/lib/python3.7/site-packages/jinja2/utils.py", line 83, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+jinja2.exceptions.UndefinedError: '_' is undefined
+2022-11-29 08:31:41,580 ERROR: Exception on /favicon.ico [GET] [in /mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/venv/lib/python3.7/site-packages/flask/app.py:1742]
+Traceback (most recent call last):
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/venv/lib/python3.7/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/venv/lib/python3.7/site-packages/flask/app.py", line 1785, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/venv/lib/python3.7/site-packages/flask/app.py", line 1767, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/venv/lib/python3.7/site-packages/flask/ctx.py", line 351, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/venv/lib/python3.7/site-packages/werkzeug/routing/map.py", line 624, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/venv/lib/python3.7/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/venv/lib/python3.7/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/venv/lib/python3.7/site-packages/flask/app.py", line 1666, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/venv/lib/python3.7/site-packages/flask/app.py", line 1606, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/app/errors/handlers.py", line 8, in not_found_error
+    return render_template('errors/404.html'), 404
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/venv/lib/python3.7/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/venv/lib/python3.7/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/venv/lib/python3.7/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/venv/lib/python3.7/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/app/templates/errors/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/app/templates/base.html", line 33, in top-level template code
+    {% block app_content %}{% endblock %}
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/app/templates/errors/404.html", line 4, in block 'app_content'
+    <h1>{{ _('Not Found') }}</h1>
+  File "/mnt/c/Users/or0275013/Documents/PythonProjects/ILLiadAccounts/venv/lib/python3.7/site-packages/jinja2/utils.py", line 83, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+jinja2.exceptions.UndefinedError: '_' is undefined
